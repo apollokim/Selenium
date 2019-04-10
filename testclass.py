@@ -1,6 +1,10 @@
 class a():
-    def add(self,a,b):
-        return a+b
+    def __init__(self,a,b):
+        self.a = int(a)
+        self.b = int(b)
 
-count =a()
-print(count.add(3,5))
+    def add(self):
+        return self.a + self.b
+
+count =a('4',5)
+print(count.add())

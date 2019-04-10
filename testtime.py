@@ -1,3 +1,5 @@
-import time
+from time import *
 
-print(time.ctime())
+print(ctime())
+sleep(2)
+print(ctime())
