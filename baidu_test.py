@@ -7,8 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 driver = webdriver.Chrome()
 driver.get("http://www.baidu.com")
 driver.maximize_window()
-
 element = WebDriverWait(driver,5,0.5).until(EC.presence_of_element_located((By.ID,'kw')))
+#element = driver.find_element_by_css_selector('#kw')
 element.send_keys('selenium')
 
 '''#获取输入框的尺寸
